@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Adventure Holidays" />
+		<meta name="description" content="Holidays" />
+
+		<title>Adventure Holidays</title>
+ 
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<link href="menu.css" rel="stylesheet" type="text/css" />
+		<link href="searchbox.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="review.css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type ="text/javascript" src="review.js"></script>
+
+
+		<script type ="text/javascript">
+		$(document).ready(function(){
+		$("#hide").click(function(){
+        $("p").hide(1000);
+		
+		});
+		$("#show").click(function(){
+        $("p").show(1000);
+		});
+		});
+		</script>
+	
+	</head>
+
+
+<body>
+
+	<div id="container">
+	
+		<div id="logo">
+			<form>
+				<input type="text" placeholder="Search..." required>
+				<input type="button" value="Search">
+			</form>
+			<img src="images/callus.png" width="300" height="40" alt="Your Adventure Starts Here" /><br>
+			<a href="login.html"><b>LOGIN</b></a> &nbsp; &nbsp; 
+			<a href="signup.html"><b>SIGN UP</b></a> &nbsp;
+			<a href="basket.html"><img src="images/basketred.png" alt="Go To Basket" width="20" height="20" border="0"/></a><a href="basket.html"><b>BASKET</b></a><br />
+		</div><!--logo closed-->
+
+		
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">HOME</a>
+				</li>
+
+				<li><a href="aboutus.html">ABOUT US</a>
+				</li>
+
+				<li><a href="destinations.html">DESTINATIONS</a>
+			<ul>
+				<li><a href="destinations.html">ASIA</a></li>
+				<li><a href="destinations.html">AFRICA</a></li>
+				<li><a href="destinations.html">SOUTH AMERICA</a></li>
+				<li><a href="destinations.html">EUROPE</a></li>
+			</ul>
+
+				</li>
+				<li><a href="activity.html">ACTIVITY</a>
+			<ul>
+				<li><a href="activity.html">BIKING</a></li>
+				<li><a href="activity.html">WALKING</a></li>
+				<li><a href="activity.html">MULTI ACTIVITY</a></li>
+			</ul>
+				</li>
+
+				<li><a href="contact us.html">CONTACT US</a>
+				</li>
+
+			</ul>
+		</div><!--menu closed--> 
+        
+            
+	<div id="banner">
+		<img src="images/bannerheader.jpg" width="880" height="110" alt="About Us" />
+    </div><!--banner closed-->
+
+	
+	
+	<div id="reviewCol1">
+		<fieldset>
+			
+			<img src="images/reviewpageheader.png" width="380" height="50" alt="Your Adventure Starts Here" /> 	
+			<br></br>
+			<button id="hide">Hide Reviews</button>
+			<button id="show">Show Reviews</button>
+	
+			<br></br>
+
+	<div class="row">
+		<label class="required" for="name"><b>Tour Name:</b></label><br></br>
+			<select id="tour">
+				<option value="tour">Ring of Kerry Ref:345-322</option>
+				<option value="tour">Myanmar Adventure Ref:365-342</option>
+				<option value="tour">Hiking in Bordeaux Ref:315-382</option>
+				<option value="tour">Tuscany Bike Tour Ref:369-372</option>
+			</select>
+			<br></br>
+	
+			<br></br>
+
+				<h1>by Kate Hudsen 2 August 2010 Ref:385 Ring of Kerry Cycling</h1>
+				<p>With the highest mountain range in Ireland as a backdrop to our RING OF KERRY CYCLING holiday the world famous Ring of Kerry traces the coastline of the Iveragh Peninsula encompassing Muckross, Killarney National Park, historic Derrynane and the picturesque villages of Sneem, Kenmare and Glenbeigh.</p> <br /><br />
+  	
+				<h1>by Jim Fitzpatrick 4 September 2010 Ref:385 Ring of Kerry Cycling</h1>
+				<p>With the highest mountain range in Ireland as a backdrop to our RING OF KERRY CYCLING holiday the world famous Ring of Kerry traces the coastline of the Iveragh Peninsula encompassing Muckross, Killarney National Park, historic Derrynane and the picturesque villages of Sneem, Kenmare and Glenbeigh.</p> <br /><br />
+    </div>
+
+</fieldset>
+
+</div><!--reviewCol1 closed-->
+
+
+
+
+<div id="reviewCol2">
+ 
+	<fieldset>
+		<legend><img src="images/shareyour.png" width="400" height="50" alt="Your Experience" /></legend>
+
+			<form id="contact_form" action="" method="post" onsubmit="return validateForm();" enctype="multipart/form-data">
+				<div class="row">
+					<label class="required" for="name"><b>Tour Name:</b></label><br></br>
+					<select id="tour">
+					<option value="tour">Myanmar Adventure Ref:365-342</option>
+					<option value="tour">Ring of Kerry Ref:345-322</option>
+					<option value="tour">Hiking in Bordeaux Ref:315-382</option>
+					<option value="tour">Tuscany Bike Tour Ref:369-372</option>
+					</select><br></br>
+				</div>
+	
+				<div class="row">
+					<label class="required" for="name"><b>Season:</b></label><br></br>
+					<input type = "radio" name = "subscription" value= "Summer" />Summer
+					<input type = "radio" name = "subscription" value= "Winter" />Winter
+					<input type = "radio" name = "subscription" value= "Autumn" />Autumn<br></br>
+				</div>
+	
+				<div class="row">
+					<label class="required" for="name"><b>Name:</b></label><br></br>
+					<input id="name" name="name" type="text" value="" size="35" /><br />
+					<span id="name_validation" class="error"></span>
+				</div>
+  
+				<div class="row">
+					<label class="required" for="email"><b>Email:</b></label><br></br>
+					<input id="email" name="email" type="text" value="" size="35" /><br />
+					<span id="email_validation" class="error"></span>
+				</div>
+	
+				<div class="row">
+					<label class="required" for="message"><b>Experience:</b></label><br></br>
+					<textarea id="message" name="message" rows="7" cols="28"></textarea><br />
+					<span id="message_validation" class="error"></span><br></br>
+	
+					<input type = "image" src = "images/submit.gif" alt = "Submit" />&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+	
+			</form>
+	</fieldset>
+
+</div><!--content3 closed-->
+	
+
+
+		<div id="footer">
+  	
+			<div id="footer1">
+				<h2>CONTACT</h2>
+				<span class="boldtext">TEL:</span> +353 (1) 832 8167<br />
+				<span class="boldtext">FAX:</span> +353 (1) 832 8166<br />
+				<span class="boldtext">EMAIL:</span><a href="mailto:adventureholidays@gmail.com"> adventureholidays@gmail.com</a><br /><br /><br />
+				<a id="imagelink" href="http://ie.twitter.com/"><img src="images/twitter.png" width="50" height="50" alt="Adventure Holidays Twitter"></a> &nbsp; 
+				<a id="imagelink" href="http://www.facebook.com"><img src="images/facebook.png" width="50" height="50" alt="Adventure Holidays Facebook" /></a> &nbsp  <br /><br />
+			</div><!--footer1 closed-->
+            
+			
+            <div id="footer2">
+				<h2>DESTINATIONS</h2>
+				<ol>
+				<li><a href="destinations.html">ASIA</a></li>
+				<li><a href="destinations.html">AFRICA</a></li>
+				<li><a href="destinations.html">SOUTH AMERICA</a></li>
+				<li><a href="destinations.html">EUROPE</a></li>
+				</ol>         
+			</div><!--footer2 closed-->
+                 
+				 
+            <div id="footer3">
+				<h2>USEFUL LINKS</h2>
+				<ol>
+				<li><a href="aboutus.html">ABOUT US</a></li>
+				<li><a href="contact us.html">CONTACT US</a></li>
+				<li><a href="terms.html">TEAM</a></li>
+				<li><a href="reviews.html">REVIEWS</a></li>
+				</ol>        
+			</div><!--footer4 closed-->
+            
+			
+            <div id="footer4">
+				<img src="images/fadelogo.png" width="230" height="240" alt="logo">
+			</div><!--footer4 closed-->
+            
+			</div><!--footer closed-->
+
+			
+			<div id="footerend">
+				<h7>&nbsp;</h7>
+            </div><!--footerend-->
+            
+			
+		</div><!--container closed-->
+
+
+	</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Adventure Holidays" />
+<meta name="description" content="Holidays" />
+
+<title>Adventure Holidays About Us</title>
+ 
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="menu.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="review.js"></script>
+<link rel="stylesheet" type="text/css" href="review.css">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+
+</head>
+
+<body>
+<div id="container">
+
+	<div id="logo">
+    <a href="search.html"><b>SEARCH</b></a> &nbsp; &nbsp;<br /><br /> 
+    <a href="login.html"><b>LOGIN</b></a> &nbsp; &nbsp; 
+    <a href="signup.html"><b>SIGN UP</b></a> &nbsp;
+    <a href="basket.html"><img src="images/basketred.png" alt="Go To Basket" width="20" height="20" border="0"/></a><a href="basket.html"><b>BASKET</b></a><br />
+	</div><!--logo closed-->
+
+	<div id="menu">
+	 <ul>
+	 <li><a id="currentlink" href="index.html">HOME</a>
+	 </li>
+
+     <li><a href="aboutus.html">ABOUT US</a>
+	 </li>
+
+	 <li><a href="destinations.html">DESTINATIONS</a>
+	 	<ul>
+	 	<li><a href="asia.html">ASIA</a></li>
+	 	<li><a href="africa.html">AFRICA</a></li>
+	 	<li><a href="southamerica.html">SOUTH AMERICA</a></li>
+        <li><a href="europe.html">EUROPE</a></li>
+        </ul>
+
+	 </li>
+     	<li><a href="activity.html">ACTIVITY</a>
+     	<ul>
+     	<li><a href="biking.html">BIKING</a></li>
+     	<li><a href="walking.html">WALKING</a></li>
+     	<li><a href="multiactivity.html">MULTI ACTIVITY</a></li>
+     	</ul>
+     </li>
+
+	 <li><a href="contact us.html">CONTACT US</a>
+	 </li>
+
+    </ul>
+    </div><!--menu closed-->  
+        
+            
+	<div id="banner">
+		<img src="images/bannerheader.jpg" width="880" height="110" alt="About Us" />
+    </div><!--banner closed-->
+	
+	
+ <fieldset>
+    <legend>Review Page:</legend><br><br />
+	Select Holiday:
+	<select id="s1" onchange="checkStock()">
+		<option value="volvo">Asia</option>
+		<option value="saab">Africa</option>
+		<option value="opel">South America</option>
+		<option value="audi">Europe</option>
+	</select>
+	
+	
+	<br><br />
+<form id="contact_form" action="" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Your name:</label><br />
+    <input id="name" name="name" type="text" value="" size="30" /><br><br />
+    <span id="name_validation" class="error"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" name="email" type="text" value="" size="30" /><br><br />
+    <span id="email_validation" class="error"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Review:</label><br />
+    <textarea id="message" name="message" rows="7" cols="30"></textarea><br><br />
+    <span id="message_validation" class="error"></span>
+	
+  </div>
+    
+    <input type = "image" src = "images/submit.gif" alt = "Submit" />
+</fieldset>
+</form>
+<div id="footer">
+  	
+	  <div id="footer1">
+		<h2>CONTACT</h2>
+        <p>
+		  <span class="boldtext">TEL:</span> +353 (1) 832 8167<br />
+		  <span class="boldtext">FAX:</span> +353 (1) 832 8166<br />
+		  <span class="boldtext">EMAIL:</span><a href="mailto:adventureholidays@gmail.com"> adventureholidays@gmail.com</a><br /><br /><br />
+		  <a id="imagelink" href="http://ie.twitter.com/"><img src="images/twitter.png" width="50" height="50" alt="Adventure Holidays Twitter"></a> &nbsp; 
+          <a id="imagelink" href="http://www.facebook.com"><img src="images/facebook.png" width="50" height="50" alt="Adventure Holidays Facebook" /></a> &nbsp  <br /><br /><br /><br />
+	    </p>
+		</div><!--footer1 closed-->
+            
+            <div id="footer2">
+  			<h2>DESTINATIONS</h2>
+			<p><ol>
+		    <li><a href="asia.html">ASIA</a></li>
+    		<li><a href="africa.html">AFRICA</a></li>
+    		<li><a href="southamerica.html">SOUTH AMERICA</a></li>
+    		<li><a href="europe.html">EUROPE</a></li>
+		    </ol></p>         
+			</div><!--footer2 closed-->
+                      
+            <div id="footer3">
+  			<h2>USEFUL LINKS</h2>
+			<p><ol>
+		    <li><a href="aboutus.html">ABOUT US</a></li>
+    		<li><a href="contact us.html">CONTACT US</a></li>
+    		<li><a href="terms.html">TERMS AND CONDITIONS</a></li>
+		    </ol></p>         
+			</div><!--footer4 closed-->
+            
+            <div id="footer4">
+  			<img src="images/fadelogo.png" width="230" height="240" alt="Adventure Holidays Logo">
+			</div><!--footer4 closed-->
+            
+			</div><!--footer closed-->
+
+			<div id="footerend">
+            <h7>&nbsp;</h7>
+            </div><!--footerend-->
+            
+</div><!--container closed-->
+
+
+
+</body>
+</html>

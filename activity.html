@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Adventure Holidays" />
+		<meta name="description" content="Holidays" />
+
+		<title>Adventure Holidays</title>
+ 
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<link href="menu.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link href="destination.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="continentsCarussel.js"></script>
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+	</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="logo">
+			<form>
+				<input type="text" placeholder="Search..." required>
+				<input type="button" value="Search">
+			</form>
+				<img src="images/callus.png" width="300" height="40" alt="Your Adventure Starts Here" /><br>
+				<a href="login.html"><b>LOGIN</b></a> &nbsp; &nbsp; 
+				<a href="signup.html"><b>SIGN UP</b></a> &nbsp;
+				<a href="basket.html"><img src="images/basketred.png" alt="Go To Basket" width="20" height="20" border="0"/></a><a href="basket.html"><b>BASKET</b></a><br />
+		</div><!--logo closed-->
+	
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">HOME</a>
+				</li>
+
+				<li><a href="aboutus.html">ABOUT US</a>
+				</li>
+
+				<li><a href="destinations.html">DESTINATIONS</a>
+			<ul>
+				<li><a href="destinations.html">ASIA</a></li>
+				<li><a href="destinations.html">AFRICA</a></li>
+				<li><a href="destinations.html">SOUTH AMERICA</a></li>
+				<li><a href="destinations.html">EUROPE</a></li>
+			</ul>
+
+				</li>
+				<li><a id="currentlink" href="activity.html">ACTIVITY</a>
+			<ul>
+				<li><a href="activity.html">BIKING</a></li>
+				<li><a href="activity.html">WALKING</a></li>
+				<li><a href="activity.html">MULTI ACTIVITY</a></li>
+			</ul>
+				</li>
+
+				<li><a href="contact us.html">CONTACT US</a>
+				</li>
+
+			</ul>
+		</div>
+		<!--menu closed-->  
+	
+	
+	
+	<div id="banner">
+		<img src="images/bannerheader.jpg" width="880" height="110" alt="About Us" />
+    </div><!--banner closed-->
+	
+	
+	
+	
+	<div id="overlay"></div>
+	
+	<div class="container">
+	 <!--carousel--> 
+
+	 <section>
+    <center><img src="tours/begintheadventureactive.png" width="640" height="100" alt="Begin the adventure"></center>
+    <div class="carousel">
+        <div class="carousel-viewport">
+            <ul class="carousel-list">
+                <li class="carousel-item carousel-item_isSelected"><img src="tours/hiking.jpg" width="650" height="350" /></li>
+                <li class="carousel-item"><img src="tours/snorkeling.jpg" width="650" height="350" /></li>
+                <li class="carousel-item"><img src="tours/hiking2.jpg" width="650" height="350" /></li>
+                <li class="carousel-item"><img src="tours/skydive.jpg" width="650" height="350" /></li>
+            </ul>
+            <a class="carousel-nav carousel-nav_prev js-carousel-nav_prev"><span class="arrow arrow_left"></span></a>
+            <a class="carousel-nav carousel-nav_next js-carousel-nav_next"><span class="arrow arrow_right"></span></a>
+            <nav class="carousel-bulletNav"></nav><br></br>
+        </div>    
+    </div>
+</section>
+
+	 
+	<!--Continet title--> 
+	<div id="container">
+	<div class="continent">
+	<div class="continet_text">
+	<h1>Myanmar Adventure In-Style (Multi-Activity Aisa)</h1>
+	<p>Free from the clutches of tomorrow’s technologies, the unassuming nature of Myanmar’s people captures the hearts of travelers, with plenty to also entertain the adventure hungry. Cruises along the Irrawaddy and on Inle Lake add to Myanmar’s unique charm.</p>
+	</div>
+	<img class="continent_pic" src="tours/snorkeling.jpg" alt="Photo of Africa#-wildlife">
+	
+	</div>
+	
+</div>	
+		
+
+	
+	<div id="specialBox">
+	<div class="boxContanedor">
+	  <img class= "picsbox" src="tours/tuscanybike.jpg" width="400" height="300"/>
+	  <h2>Tuscany Bike Tour (Biking Europe)</h2>
+	 <p class="text1">On the Tuscany Self Guided Bike Tour explore the heart of Tuscany by bike from Lucca to the famous leaning Tower of Pisa and Leonardo da Vinci’s birthplace. Ride through the Chianti’s vineyards and pedal back to the fortified town of Lucca. •	Pedal through the most beautiful vineyards of the Chianti region. <br></br> Cycling in Tuscany will live up to all your dreams. Bike on quiet roads over rolling hills through the heart of Tuscany. Perhaps stopping for a long lunch at a local vineyard, medieval town or just a roadside field where you can kick back and enjoy an afternoon snooze.  Gorgeous golden hillsides, rich artistic heritage, gentle biking paths and great food and wine at the end of a day’s cycing make this holiday a perfect mix of what makes Tuscany great.</p>
+	 
+	  <button onmousedown="toggleOverlay()">Close</button>
+	 </div>
+    </div>  
+ 
+<br>
+ 
+	 <div class="continent">
+		<div class="continet_text"> 
+		<h1>Tuscany Bike Tour (Biking Europe)</h1>
+		<p>On the Tuscany Self Guided Bike Tour explore the heart of Tuscany by bike from Lucca to the famous leaning Tower of Pisa and Leonardo da Vinci’s birthplace. Ride through the Chianti’s vineyards and pedal back to the fortified town of Lucca. •	Pedal through the most beautiful vineyards of the Chianti region</p>
+		<h5 class="price">Price: €900</h5><br>
+		<a href="#top">return to top</a>
+		</div>
+		<img class="continent_pic" src="tours/tuscanybike.jpg" alt="Photo of trekking tour Marroco">
+		<button onmousedown="toggleOverlay()">more..</button>
+	</div>	
+	
+<br>	
+	
+	<div class="continent">
+		<div class="cont_tour"> 
+		<h1>La Gran Sabana (Kayaking South America) </h1>
+		<p>Rafting in La Gran Sabana Venezuela, Rio Yuruani (Remo & Body Rafting Rafting) Rio Yuruani. This activity is practiced in the Rio Yuruani in the Gran Sabana, departing from Santa Elena Yuruani until the river, jumping rafting is practiced is called JUMP THE CURTAIN</p>
+		<h5 class="price">Price: €2600</h5><br>
+		<a href="#top">return to top</a>
+		</div>
+		<img class="continent_pic" src="tours/rafting.jpg" alt="Photo of zambia">
+	</div>	
+	
+<br>
+	
+		<div class="continent">
+		<div class="cont_tour"> 
+		<h1>Bordeaux Vinyards Adventure (Hiking Europe)</h1>
+		<p>On this Self-guided hiking Bordeaux’s vineyards tour you will cross some of the most famous vineyards in the world experiencing a wonderful mix of beautiful landscapes, oenological pleasure and cultural discoveries… Explore the vineyards and cobbled streets of St. Emilion, to the vineyards of Sauternes. </p>
+		<h5 class="price">Price: €4000</h5><br>
+		<a href="#top">return to top</a>
+		</div>
+		<img class="continent_pic" src="tours/bordeauxvinyard.jpg" alt="Photo of Kilimanjaro">
+		
+	</div>	
+	
+<br>
+		<div class="continent">
+		<div class="cont_tour"> 
+		<h1>Ring of Kerry (Cycling Europe)</h1>
+		<p>With the highest mountain range in Ireland as a backdrop to our RING OF KERRY CYCLING holiday the world famous Ring of Kerry traces the coastline of the Iveragh Peninsula encompassing Muckross, Killarney National Park, historic Derrynane and the picturesque villages of Sneem, Kenmare and Glenbeigh.</p>
+		<h5 class="price">Price: €2100</h5><br>
+		<a href="#top">return to top</a>
+		</div>
+		<img class="continent_pic" src="tours/ringofkerry.jpg" alt="Photo of Kerry">
+	</div>	
+	
+</div>	<!--content closed-->
+	
+
+<br>	
+
+	   
+		<div id="footer">
+  	
+			<div id="footer1">
+				<h2>CONTACT</h2>
+				<span class="boldtext">TEL:</span> +353 (1) 832 8167<br />
+				<span class="boldtext">FAX:</span> +353 (1) 832 8166<br />
+				<span class="boldtext">EMAIL:</span><a href="mailto:adventureholidays@gmail.com"> adventureholidays@gmail.com</a><br /><br /><br />
+				<a id="imagelink" href="http://ie.twitter.com/"><img src="images/twitter.png" width="50" height="50" alt="Adventure Holidays Twitter"></a> &nbsp; 
+				<a id="imagelink" href="http://www.facebook.com"><img src="images/facebook.png" width="50" height="50" alt="Adventure Holidays Facebook" /></a> &nbsp  <br /><br />
+			</div><!--footer1 closed-->
+            
+			
+            <div id="footer2">
+				<h2>DESTINATIONS</h2>
+				<ol>
+				<li><a href="destinations.html">ASIA</a></li>
+				<li><a href="destinations.html">AFRICA</a></li>
+				<li><a href="destinations.html">SOUTH AMERICA</a></li>
+				<li><a href="destinations.html">EUROPE</a></li>
+				</ol>         
+			</div><!--footer2 closed-->
+                 
+				 
+            <div id="footer3">
+				<h2>USEFUL LINKS</h2>
+				<ol>
+				<li><a href="aboutus.html">ABOUT US</a></li>
+				<li><a href="contact us.html">CONTACT US</a></li>
+				<li><a href="terms.html">TEAM</a></li>
+				<li><a href="reviews.html">REVIEWS</a></li>
+				</ol>        
+			</div><!--footer4 closed-->
+            
+			
+            <div id="footer4">
+				<img src="images/fadelogo.png" width="230" height="240" alt="logo">
+			</div><!--footer4 closed-->
+            
+			</div><!--footer closed-->
+
+			
+			<div id="footerend">
+				<h7>&nbsp;</h7>
+            </div><!--footerend-->
+            
+			
+		</div><!--container closed-->
+
+
+	</body>
+</html>

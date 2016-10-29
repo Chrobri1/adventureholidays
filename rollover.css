@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+#image-swap-1{
+width:260px; 
+height:180px; 
+background:url(images/biking.jpg);
+}
+
+#image-swap-1 img:hover {
+opacity: 0;
+}
